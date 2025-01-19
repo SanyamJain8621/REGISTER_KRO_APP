@@ -1,0 +1,25 @@
+.logo-bar {
+    display: flex;
+    justify-content: space-around; /* Distributes logos evenly */
+    align-items: center;
+    width: 100%;
+    margin: 20px auto;
+    background-color: white;
+    position: relative;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px; /* Set a fixed height for the container */
+    width: 150px; /* Allow enough room for logos to breathe */
+    overflow: hidden; /* Prevent content spill if logos are overly large */
+  }
+  
+  .logo-container img {
+    max-height: 100%; /* Scale logos proportionally within the container */
+    max-width: 100%;
+    object-fit: contain; /* Ensure the logos do not get cropped or distorted */
+  }
+  
